@@ -1,7 +1,7 @@
 {
-  "name": "fleja",
-  "version": "1.0.0",
-  "description": "Fleja | React Next Multi-Concepts Templates",
+  "name": "code.sydney",
+  "version": "0.0.1",
+  "description": "DCCAJS",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js -p $PORT",
