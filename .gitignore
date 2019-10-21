@@ -62,3 +62,7 @@ typings/
 
 # Build
 .next/
+
+# IDE and OS
+/.idea/
+.DS_Store
