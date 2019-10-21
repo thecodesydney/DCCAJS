@@ -15,3 +15,7 @@ npm install
 ```
 npm run dev
 ```
+
+### Credits
+
+- Photo by Perry Grone on Unsplash
