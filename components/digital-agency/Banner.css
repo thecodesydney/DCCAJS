@@ -1,0 +1,231 @@
+:root {
+  --brand-color-red: #fc2847;
+  --brand-color-yellow: #ffd800;
+  --color-regular: #fff;
+  --social-icons: #6084a4;
+}
+
+.main-banner {
+  position: relative;
+  z-index: 1;
+  height: 810px;
+  background-color: var(--color-regular);
+}
+
+.digital-agency-banner {
+  position: relative;
+  background-image: url("../../images/banner.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.hero-content {
+  margin-top: 35px;
+}
+
+.hero-content h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: var(--color-regular);
+}
+
+.hero-content p {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.hero-content ul {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero-content ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.banner-image {
+  text-align: right;
+}
+
+.banner-image img {
+  position: relative;
+  top: 74px;
+  right: 0;
+}
+
+.banner-social-buttons {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.banner-social-buttons ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.banner-social-buttons ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.banner-social-buttons ul li:last-child {
+  margin-right: 0;
+}
+
+.banner-social-buttons ul li a {
+  color: var(--social-icons);
+}
+
+.banner-social-buttons ul li a i {
+  line-height: 30px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid var(--social-icons);
+  border-radius: 50%;
+}
+
+.banner-social-buttons ul li a:hover {
+  color: var(--brand-color-yellow);
+}
+
+#scroll-down {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#scroll-down .arrow-down {
+  display: block;
+  width: 10px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+#scroll-down .arrow-down::after {
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  content: "";
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  border-top: 2px solid var(--brand-color-yellow);
+  border-right: 2px solid var(--brand-color-yellow);
+}
+
+#scroll-down .arrow-down::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 58px;
+  margin-left: -2px;
+  content: " ";
+  -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+  animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+  background: var(--brand-color-yellow);
+}
+
+#scroll-down #scroll-title {
+  font-weight: 500;
+  display: block;
+  text-transform: capitalize;
+  color: var(--color-regular);
+}
+
+.banner-primary-btn {
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  padding: 14px 33px;
+  color: var(--color-regular);
+  border-radius: 25px;
+  background: var(--brand-color-red);
+  opacity: .8
+}
+
+.banner-primary-btn:hover {
+  color: var(--color-regular);
+  background: var(--brand-color-red);
+  opacity: 1;
+}
+
+.banner-primary-btn:visited {
+  color: var(--color-regular);
+}
+
+@-webkit-keyframes elasticus {
+  0% {
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  50.1% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+}
+
+@keyframes elasticus {
+  0% {
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  50.1% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+}
