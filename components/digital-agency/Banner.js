@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Banner.css";
+
 class Banner extends React.Component {
   render() {
     return (
@@ -21,7 +23,7 @@ class Banner extends React.Component {
                       viverra maecenas accumsan lacus vel facilisis. eiusmod
                       tempor incididunt ut labore et dolore magna aliqua.
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="#" className="banner-primary-btn">
                       Learn more
                     </a>
                   </div>
@@ -34,25 +36,20 @@ class Banner extends React.Component {
         <div className="banner-social-buttons">
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/deadlyconnections/">
                 <i className="icofont-facebook"></i>
-
                 <span>Facebook</span>
               </a>
             </li>
-
             <li>
-              <a href="#">
+              <a href="https://twitter.com/deadlyccajss">
                 <i className="icofont-twitter"></i>
-
                 <span>Twitter</span>
               </a>
             </li>
-
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/deadlyconnections/">
                 <i className="icofont-instagram"></i>
-
                 <span>Instagram</span>
               </a>
             </li>

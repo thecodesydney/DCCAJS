@@ -2,27 +2,37 @@
   "name": "code.sydney",
   "version": "0.0.1",
   "description": "DCCAJS",
+  "author": "EnvyTheme.com",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js -p $PORT",
     "build": "next build",
-    "lint": "lint-staged",
+    "lint": "eslint .",
     "pretty": "pretty-quick",
     "start": "NODE_ENV=production node server.js -p $PORT"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
   "lint-staged": {
-    "*.js": [
+    "*.{js,jsx}": [
       "eslint --fix",
+      "prettier --write",
       "git add"
     ]
   },
-  "author": "EnvyTheme.com",
-  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": ["react-app", "prettier"],
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+    }
+  },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
