@@ -25,11 +25,14 @@
     }
   },
   "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "prettier"
-    ],
+    "extends": ["prettier"],
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+    },
     "env": {
       "browser": true,
       "node": true,
