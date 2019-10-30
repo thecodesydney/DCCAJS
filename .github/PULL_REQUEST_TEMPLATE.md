@@ -9,4 +9,5 @@
 
 
 ## Tested on
+- [ ] Chrome
 - [ ] Safari
