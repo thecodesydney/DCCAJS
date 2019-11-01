@@ -23,6 +23,24 @@ const options = {
   }
 };
 
+const partners = [
+  {
+    company: "Equil Advisory Logo",
+    fileName: "equil.png",
+    link: "https://equiladvisory.com.au/"
+  },
+  {
+    company: "King & Wood Mallesons Logo",
+    fileName: "kwm.JPG",
+    link: "https://www.kwm.com/en/au"
+  },
+  {
+    company: "The Funding Network Logo",
+    fileName: "tfn.jpg",
+    link: "https://www.thefundingnetwork.com.au/"
+  }
+];
+
 const Partner = () => {
   const [display, setDisplay] = useState(false);
 
@@ -30,28 +48,32 @@ const Partner = () => {
     setDisplay(true);
   }, []);
 
+  console.log(partners);
+
   return (
     <div className="partner-area ptb-120 bg-38d16a">
       <div className="container">
         <div className="row">
           {display ? (
             <OwlCarousel className="partner-slides owl-carousel owl-theme">
-              <div className="col-lg-12">
-                <div className="partner-item">
-                  <Link href="#">
-                    <a>
-                      <img
-                        src={require("../../images/partner-image/equil.png")}
-                        alt="partner"
-                      />
-                      <img
-                        src={require("../../images/partner-image/equil.png")}
-                        alt="partner"
-                      />
-                    </a>
-                  </Link>
+              {partners.map(partner => (
+                <div className="col-lg-12">
+                  <div className="partner-item">
+                    <Link href={partner.link}>
+                      <a>
+                        <img
+                          src={require(`../../images/partner-image/${partner.fileName}`)}
+                          alt={partner.company}
+                        />
+                        <img
+                          src={require(`../../images/partner-image/${partner.fileName}`)}
+                          alt={partner.company}
+                        />
+                      </a>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              ))}
             </OwlCarousel>
           ) : (
             ""
