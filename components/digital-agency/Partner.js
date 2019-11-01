@@ -47,7 +47,7 @@ const Partner = () => {
   }, []);
 
   return (
-    <div className="partner-area ptb-50 bg-38d16a">
+    <div className="partner-area ptb-30 bg-38d16a">
       <div className="container">
         <div className="section-title">
           <h3 className="sponsor-title">Our Sponsors</h3>
