@@ -31,12 +31,12 @@ const partners = [
   },
   {
     company: "King & Wood Mallesons Logo",
-    fileName: "kwm.JPG",
+    fileName: "kwm.png",
     link: "https://www.kwm.com/en/au"
   },
   {
     company: "The Funding Network Logo",
-    fileName: "tfn.jpg",
+    fileName: "tfn.png",
     link: "https://www.thefundingnetwork.com.au/"
   }
 ];
@@ -48,10 +48,8 @@ const Partner = () => {
     setDisplay(true);
   }, []);
 
-  console.log(partners);
-
   return (
-    <div className="partner-area ptb-120 bg-38d16a">
+    <div className="partner-area ptb-50 bg-38d16a">
       <div className="container">
         <div className="row">
           {display ? (
@@ -64,10 +62,12 @@ const Partner = () => {
                         <img
                           src={require(`../../images/partner-image/${partner.fileName}`)}
                           alt={partner.company}
+                          height="100px"
                         />
                         <img
                           src={require(`../../images/partner-image/${partner.fileName}`)}
                           alt={partner.company}
+                          height="100px"
                         />
                       </a>
                     </Link>
