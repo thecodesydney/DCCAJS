@@ -1,7 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
-import Link from "next/link";
 import dynamic from "next/dynamic";
-// eslint-disable-next-line
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
 
 const options = {
@@ -12,13 +10,13 @@ const options = {
   autoplay: true,
   responsive: {
     0: {
-      items: 2
+      items: 3
     },
     768: {
       items: 3
     },
     1200: {
-      items: 5
+      items: 3
     }
   }
 };
@@ -51,13 +49,23 @@ const Partner = () => {
   return (
     <div className="partner-area ptb-50 bg-38d16a">
       <div className="container">
+        <div className="section-title">
+          <h3 className="sponsor-title">Our Sponsors</h3>
+        </div>
         <div className="row">
           {display ? (
-            <OwlCarousel className="partner-slides owl-carousel owl-theme">
+            <OwlCarousel
+              className="partner-slides owl-carousel owl-theme"
+              {...options}
+            >
               {partners.map(partner => (
                 <div className="col-lg-12">
                   <div className="partner-item">
-                    <Link href={partner.link}>
+                    <a
+                      href={partner.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <a>
                         <img
                           src={require(`../../images/partner-image/${partner.fileName}`)}
@@ -70,7 +78,7 @@ const Partner = () => {
                           height="100px"
                         />
                       </a>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               ))}

@@ -47,6 +47,7 @@ This files table contents are outlined below>>>>>
 ** - Coming Soon CSS
 ** - 404 Error CSS
 ** - Footer CSS
+** - Custom CSS
 ** - Go Top CSS
 */
 
@@ -5213,4 +5214,13 @@ Go Top CSS
     h1 {
         margin-bottom: 15px;
     }
+}
+
+/*================================================
+Custom CSS
+=================================================*/
+.sponsor-title {
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
