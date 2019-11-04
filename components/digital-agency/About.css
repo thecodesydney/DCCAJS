@@ -1,0 +1,20 @@
+:root {
+  --brand-color-red: #fc2847;
+  --brand-color-yellow: #ffd800;
+  --color-regular: #fff;
+
+  --section-heading-ff: sans-serif;
+  --section-p-color: lightslategrey;
+}
+
+p {
+  color: var(--section-p-color);
+}
+
+.section-title h2 {
+  font-family: var(--section-heading-ff);
+}
+
+.section-title span {
+  color: var(--brand-color-red);
+}

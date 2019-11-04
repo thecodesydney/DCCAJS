@@ -2,7 +2,11 @@
   --brand-color-red: #fc2847;
   --brand-color-yellow: #ffd800;
   --color-regular: #fff;
+
   --social-icons: #6084a4;
+  --social-icons-hover: var(--brand-color-yellow);
+  --banner-btn: var(--brand-color-red);
+  --arrow-down: var(--brand-color-yellow);
 }
 
 .main-banner {
@@ -102,7 +106,7 @@
 }
 
 .banner-social-buttons ul li a:hover {
-  color: var(--brand-color-yellow);
+  color: var(--social-icons-hover);
 }
 
 #scroll-down {
@@ -130,8 +134,8 @@
   content: "";
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
-  border-top: 2px solid var(--brand-color-yellow);
-  border-right: 2px solid var(--brand-color-yellow);
+  border-top: 2px solid var(--arrow-down);
+  border-right: 2px solid var(--arrow-down);
 }
 
 #scroll-down .arrow-down::before {
@@ -144,7 +148,7 @@
   content: " ";
   -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
   animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
-  background: var(--brand-color-yellow);
+  background: var(--arrow-down);
 }
 
 #scroll-down #scroll-title {
@@ -162,13 +166,13 @@
   padding: 14px 33px;
   color: var(--color-regular);
   border-radius: 25px;
-  background: var(--brand-color-red);
+  background: var(--banner-btn);
   opacity: .8
 }
 
 .banner-primary-btn:hover {
   color: var(--color-regular);
-  background: var(--brand-color-red);
+  background: var(--banner-btn);
   opacity: 1;
 }
 
