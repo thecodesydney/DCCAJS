@@ -18,16 +18,3 @@ p {
 .section-title span {
   color: var(--brand-color-red);
 }
-
-.cta-about-image {
-  width: 100%;
-  height: 100%;
-  background-image: url(../../images/cta-about.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.cta-about-image img {
-  display: none;
-}
