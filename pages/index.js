@@ -15,7 +15,7 @@ import Team from "../components/digital-agency/Team";
 // import Funfacts from "../components/digital-agency/Funfacts";
 // import Blog from "../components/digital-agency/Blog";
 import Partner from "../components/digital-agency/Partner";
-// import Contact from "../components/digital-agency/Contact";
+import Contact from "../components/digital-agency/Contact";
 
 const index = () => (
   <React.Fragment>
@@ -23,6 +23,7 @@ const index = () => (
     <About />
     <Team />
     <Partner />
+    <Contact />
     <Footer />
   </React.Fragment>
 );
