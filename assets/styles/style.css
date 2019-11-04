@@ -2965,31 +2965,31 @@ Team CSS
   background: #ffffff;
 }
 
-.single-team .team-image .social-links li a:hover {
+/* .single-team .team-image .social-links li a:hover {
   color: #ffffff;
   border-color: #38d16a;
   background: #38d16a;
-}
+} */
 
 .single-team .team-image .social-links li:last-child {
   margin-bottom: 0;
 }
 
-.single-team .team-content {
+.single-team .event-content {
   margin-top: 40px;
 }
 
-.single-team .team-content h3 {
+.single-team .event-content h3 {
   font-size: 22px;
   margin-bottom: 9px;
 }
 
-.single-team .team-content span {
+/* .single-team .team-content span {
   font-size: 14px;
   display: block;
   text-transform: uppercase;
   color: #6084a4;
-}
+} */
 
 .single-team:hover .team-image .social-links {
   right: 0;
