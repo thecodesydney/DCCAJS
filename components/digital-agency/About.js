@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Link from "next/link";
 
 import "./About.css";
 
@@ -39,10 +38,6 @@ export class About extends Component {
                   ipsa quae ab illo inventore veritatis et quasi architecto
                   beatae vitae dicta sunt explicabo.
                 </p>
-
-                <Link href="#">
-                  <a className="about-btn">Let's Talk</a>
-                </Link>
               </div>
             </div>
           </div>

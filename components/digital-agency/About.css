@@ -30,25 +30,3 @@ p {
 .cta-about-image img {
   display: none;
 }
-
-.about-btn {
-  font-size: 15px;
-  font-weight: 500;
-  position: relative;
-  z-index: 1;
-  padding: 14px 33px;
-  color: var(--color-regular);
-  border-radius: 25px;
-  background: var(--about-btn);
-  opacity: .8
-}
-
-.about-btn:hover {
-  color: var(--color-regular);
-  background: var(--about-btn);
-  opacity: 1;
-}
-
-.banner-primary-btn:visited {
-  color: var(--color-regular);
-}
