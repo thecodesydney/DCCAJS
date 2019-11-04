@@ -1,0 +1,54 @@
+:root {
+  --brand-color-red: #fc2847;
+  --brand-color-yellow: #ffd800;
+  --color-regular: #fff;
+
+  --about-btn: var(--brand-color-red);
+}
+
+p {
+  color: lightslategrey;
+}
+
+.section-title h2 {
+  text-transform: none;
+}
+
+.section-title span {
+  color: var(--brand-color-red);
+}
+
+.cta-about-image {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/cta-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cta-about-image img {
+  display: none;
+}
+
+.about-btn {
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  padding: 14px 33px;
+  color: var(--color-regular);
+  border-radius: 25px;
+  background: var(--about-btn);
+  opacity: .8
+}
+
+.about-btn:hover {
+  color: var(--color-regular);
+  background: var(--about-btn);
+  opacity: 1;
+}
+
+.banner-primary-btn:visited {
+  color: var(--color-regular);
+}
