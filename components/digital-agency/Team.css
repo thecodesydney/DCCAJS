@@ -1,0 +1,22 @@
+.event-content {
+  margin-top: 40px;
+}
+
+.event-content h3 {
+  font-family: var(--section-heading-ff);
+  font-size: 22px;
+  margin-bottom: 9px;
+}
+
+.event-content span {
+  font-size: 14px;
+  display: block;
+  text-transform: uppercase;
+  color: var(--section-p-color);
+}
+
+.single-team .team-image .social-links li a:hover {
+  color: var(--color-regular);
+  border: var(--social-icons-hover);
+  background: var(--social-icons-hover);
+}
