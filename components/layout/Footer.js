@@ -22,23 +22,18 @@ const Footer = () => {
 
               <ul className="social-links">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/deadlyconnections/">
                     <i className="icofont-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/deadlyccajss">
                     <i className="icofont-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/deadlyconnections/">
                     <i className="icofont-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="icofont-pinterest"></i>
                   </a>
                 </li>
               </ul>
@@ -138,9 +133,9 @@ const Footer = () => {
 
             <div className="col-lg-6 col-md-6 text-right">
               <p>
-                Design & Developed by{" "}
-                <a href="https://envytheme.com" target="_blank">
-                  EnvyTheme
+                Website Design and Development by{" "}
+                <a href="http://code.sydney/" target="_blank">
+                  Code.Sydney
                 </a>
               </p>
             </div>
@@ -166,4 +161,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer
