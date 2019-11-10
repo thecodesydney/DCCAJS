@@ -2,18 +2,18 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer-area ptb-120 pb-0">
+    <footer className="footer-area pb-0">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          <div className="col-lg-6 col-md-6 col-sm-6">
             <div className="single-footer-widget">
               <div className="logo">
-                <a href="#">
+                {/* <a href="#">
                   <img
                     src={require("../../images/footer-logo.png")}
                     alt="logo"
                   />
-                </a>
+                </a> */}
               </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-6">
+          {/* <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="single-footer-widget">
               <h3>Recent Post</h3>
 
@@ -91,7 +91,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="single-footer-widget">
@@ -143,7 +143,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <img
+      {/* <img
         src={require("../../images/line-bg.png")}
         className="line-bg"
         alt="line-bg"
@@ -156,7 +156,7 @@ const Footer = () => {
       </div>
       <div className="shape27">
         <img src={require("../../images/shapes/27.png")} alt="shape" />
-      </div>
+      </div> */}
     </footer>
   );
 };

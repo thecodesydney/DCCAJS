@@ -143,6 +143,12 @@ p {
         bottom: 30px;
     }
 }
+.ptb-minus-20 {
+    padding: {
+        top: -20px;
+        bottom: -20px;
+    }
+}
 .bg-38d16a {
     background-color: $template-color;
 }
@@ -5012,10 +5018,11 @@ Coming Soon CSS
 Footer CSS
 =================================================*/
 .footer-area {
+    height: 500px;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background: #08071c;
+    background: #010B3F;
 
     .line-bg {
         position: absolute;
@@ -5041,6 +5048,7 @@ Footer CSS
     }
 }
 .single-footer-widget {
+    margin-top:20px;
     .logo {
         a {
             display: block;
