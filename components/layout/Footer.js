@@ -7,18 +7,15 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-6">
             <div className="single-footer-widget">
-              <div className="logo">
-                {/* <a href="#">
-                  <img
-                    src={require("../../images/footer-logo.png")}
-                    alt="logo"
-                  />
-                </a> */}
-              </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                We Acknowledge and pay respects to the First Nations People of Australia, the land in which we live and work. We recognise the strength,resilience and capacity of Aboriginal people and pay respects to Elders past, present and emerging.
               </p>
+            </div>
+          </div>
+
+          <div className="col-lg-6 col-md-6 col-sm-6">
+            <div className="single-footer-widget">
+              <h3>Get in Touch</h3>
 
               <ul className="social-links">
                 <li>
@@ -37,65 +34,6 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
-          </div>
-
-          {/* <div className="col-lg-3 col-md-6 col-sm-6">
-            <div className="single-footer-widget ml-4">
-              <h3>Quick Links</h3>
-
-              <ul className="list">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Portfolio</a>
-                </li>
-                <li>
-                  <a href="#">News</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-                <li>
-                  <a href="#">FAQ's</a>
-                </li>
-              </ul>
-            </div>
-          </div> */}
-
-          {/* <div className="col-lg-3 col-md-6 col-sm-6">
-            <div className="single-footer-widget">
-              <h3>Recent Post</h3>
-
-              <ul className="footer-recent-post">
-                <li>
-                  <a href="#">The Most Popular New Business Apps</a>
-
-                  <span>25 Feb 2019</span>
-                </li>
-
-                <li>
-                  <a href="#">The Best Marketing Management Tools</a>
-
-                  <span>27 Feb 2019</span>
-                </li>
-
-                <li>
-                  <a href="#">3 WooCommerce Plugins to Boost Sales</a>
-
-                  <span>28 Feb 2019</span>
-                </li>
-              </ul>
-            </div>
-          </div> */}
-
-          <div className="col-lg-6 col-md-6 col-sm-6">
-            <div className="single-footer-widget">
-              <h3>Get in Touch</h3>
 
               <ul className="footer-contact-info">
                 <li>
@@ -123,11 +61,11 @@ const Footer = () => {
         <div className="copyright-area">
           <div className="row">
             <div className="col-lg-6 col-md-6">
-              <p>Copyright @2019. All rights reserved.</p>
+              <p className="copyright-area-text">Deadly Connections Community & Justice Services Incorporated © 2019 ABN 55 628 603 396</p>
             </div>
 
             <div className="col-lg-6 col-md-6 text-right">
-              <p>
+              <p className="copyright-area-text">
                 Website Design and Development by{" "}
                 <a href="http://code.sydney/" target="_blank">
                   Code.Sydney
@@ -138,7 +76,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <img
+      <img
         src={require("../../images/line-bg.png")}
         className="line-bg"
         alt="line-bg"
@@ -151,7 +89,7 @@ const Footer = () => {
       </div>
       <div className="shape27">
         <img src={require("../../images/shapes/27.png")} alt="shape" />
-      </div> */}
+      </div>
     </footer>
   );
 };
