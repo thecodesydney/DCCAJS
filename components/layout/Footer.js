@@ -1,6 +1,9 @@
 import React from "react";
 
 const Footer = () => {
+
+  const EMAIL = "info@deadlyconnections.org.au"
+
   return (
     <footer className="footer-area pb-0">
       <div className="container">
@@ -37,21 +40,15 @@ const Footer = () => {
 
               <ul className="footer-contact-info">
                 <li>
-                  <i className="icofont-google-map"></i>
-                  <span>Location:</span>
-                  27 Division St, New York, NY 10002, USA
-                </li>
-
-                <li>
                   <i className="icofont-phone"></i>
                   <span>Phone:</span>
-                  <a href="#">+44 014799584</a>
+                  <a href="#">+61 433 900 218</a>
                 </li>
 
                 <li>
                   <i className="icofont-email"></i>
                   <span>Email:</span>
-                  <a href="#">support@fleja.com</a>
+                  <a href={`mailto:${EMAIL}?Subject=Website enquiry`}>{EMAIL}</a>
                 </li>
               </ul>
             </div>
