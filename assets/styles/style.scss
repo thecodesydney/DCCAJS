@@ -5018,7 +5018,7 @@ Coming Soon CSS
 Footer CSS
 =================================================*/
 .footer-area {
-    height: 500px;
+    height: 250px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -5048,7 +5048,8 @@ Footer CSS
     }
 }
 .single-footer-widget {
-    margin-top:20px;
+    // margin-top:10px;
+    padding: 15px 0;
     .logo {
         a {
             display: block;
@@ -5173,7 +5174,7 @@ Footer CSS
     }
 }
 .copyright-area {
-    margin-top: 120px;
+    // margin-top: 120px;
     border-top: 1px solid #444352;
     padding: {
         top: 30px;
