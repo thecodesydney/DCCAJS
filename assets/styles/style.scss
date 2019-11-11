@@ -59,7 +59,7 @@ Default CSS
 
 $font-family: 'Rubik', sans-serif;
 $paragraph-font-family: 'Open Sans', sans-serif;
-$template-color: #38d16a;
+$template-color: #F3CF07;
 $pink-color: #F54EA2;
 $white-color: #ffffff;
 $black-color: #121619;
@@ -141,6 +141,12 @@ p {
     padding: {
         top: 30px;
         bottom: 30px;
+    }
+}
+.ptb-minus-20 {
+    padding: {
+        top: -20px;
+        bottom: -20px;
     }
 }
 .bg-38d16a {
@@ -2560,10 +2566,10 @@ Team CSS
             bottom: 0;
             list-style-type: none;
             padding: 0;
-            margin: 0;
             opacity: 0;
             visibility: hidden;
             transition: $transition;
+            margin-bottom: 20px;
 
             li {
                 display: block;
@@ -5012,10 +5018,11 @@ Coming Soon CSS
 Footer CSS
 =================================================*/
 .footer-area {
+    height: 280px;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background: #08071c;
+    background: #010B3F;
 
     .line-bg {
         position: absolute;
@@ -5041,6 +5048,7 @@ Footer CSS
     }
 }
 .single-footer-widget {
+    padding: 15px 0;
     .logo {
         a {
             display: block;
@@ -5073,7 +5081,7 @@ Footer CSS
                     color: $black-color;
                     text-align: center;
                     border-radius: 50%;
-                    margin-right: 6px;
+                    margin: -25px 6px 15px 0;
                     &:hover {
                         background: $template-color;
                         color: $white-color;
@@ -5165,7 +5173,6 @@ Footer CSS
     }
 }
 .copyright-area {
-    margin-top: 120px;
     border-top: 1px solid #444352;
     padding: {
         top: 30px;
@@ -5230,4 +5237,8 @@ Custom CSS
     margin: 0;
     padding: 0;
     color: #000;
+}
+
+.copyright-area-text {
+    font-size: 12px;
 }
